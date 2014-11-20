@@ -1,0 +1,22 @@
+Serial python package required!
+pyserial -> python-serial in ubuntu
+
+1. ls /dev
+2. look for ttyACMX
+3. write it into bluetooth.py
+4. start with  "python bluetooth.py"
+5. type d for discovery
+6. type e for establishing the link
+7. type 1 for activating all notifications
+8. enjoy and type t for terminating the link
+
+2 deactivates the notifications, however t do this
+as well. Option 2 is somewhat redundant.
+
+Problems:
+
+If /dev/ttyACMx is not created when pluging the dongle,
+check your kernel to find out if the required module
+was compiled.
+
+CONFIG_USB_ACM=true  module: cdc-acm
